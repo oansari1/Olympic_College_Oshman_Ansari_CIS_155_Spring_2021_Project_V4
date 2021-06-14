@@ -1,0 +1,473 @@
+@charset "utf-8";
+/*
+    Author: Oshman Ansari
+    Date:5/27/21
+    CSS155 Project V3
+    filename: styles.css
+
+
+This stylesheet has been created to change the appearance of the pages
+found on my project website. Currently I'm keeping all fonts Tahoma,
+but that will change in the future.
+
+
+Learning outcomes featured in this stylesheet: 
+
+M8LO10 Demonstrate a CSS animation or transition
+    Spin animation was added to #laugh in about.html, activated by hover
+*/
+
+/* HTML and Body Styles*/
+html {
+    height: 100%;
+}
+
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    min-height: 100%;
+}
+
+main {
+    background-color: rgba(251, 226, 170, 0.5);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-flex: 5 1 0px;
+    flex: 5 1 0px;
+    height: 100%;
+}
+
+aside {
+    background-color: rgb(192, 192, 192);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    min-height: 100%;
+}
+
+/* Heading Styles*/
+
+header {
+    background-color: rgb(142, 142, 142);
+    width: 100%;   
+}
+
+h1 {
+    flex: 1 1 0px;
+    text-align: center;
+    font: small-caps 2.5em Tahoma;
+}
+
+
+
+#h1 {
+    -webkit-display: flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    height: 50px;
+    margin-top: 32px;
+}
+
+#abouth1 {
+    display: contents;
+    margin: 5px 0px;
+    width: fit-content;
+}
+
+h2 {
+    clear: left;
+    text-align: center;
+    font: small-caps 1.9em Tahoma;
+    text-shadow: gray 0px 0px 10px;
+}
+
+/* Navigation Styles */
+
+.navlink, .cart , .Inavbar {
+    display: none;
+}
+
+.navdiv, .navbar {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+.navbar, .navbar div , .Inavbar , .Inavbar div {
+    -webkit-flex: 1 1 0px;
+    flex: 1 1 0px;
+}
+.navbar div , .Inavbar div {
+    -webkit-flex: 1 1 0px;
+    flex: 1 1 0px;
+    text-align: center;
+    background: rgba(160, 81, 45, 0.705);
+    border: 5px outset sienna;
+    padding: 3px;
+}
+
+.navdiv  div  a , .Inavbar div a {
+    color: rgb(149, 201, 60);
+}
+
+
+/* List Styles */
+
+ul ol {
+    color: blueviolet
+}
+
+li.fluff {
+    color: darkorchid
+}
+
+ol > li:nth-of-type(even) {
+    font: italic 1.2em Tahoma;
+}
+
+ol > li:nth-of-type(odd) {
+    font: normal 1.2em impact;
+}
+
+/* Aside Styles */
+
+aside {
+    -webkit-flex: 1 1 0px;
+    flex: 1 1 0px;
+    overflow-y: scroll;
+}
+
+/* Paragraph Styles */
+p {
+    color: seagreen;
+}
+
+p::first-letter {
+    font-size: 125%;
+}
+
+/* Figure Styles */
+
+figcaption {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#giggle {
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* Image Styles */
+
+#sitemap {
+    display: block;
+    margin:auto;
+    width: 50%;
+    height: 40em;
+}
+
+#mobileLogo {
+    display: none;
+}
+
+header  div  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+}
+
+#left {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    transform: 
+        rotatey(180deg)
+        rotate(70deg);
+        width: 50px;
+}
+
+#right {
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+    transform: rotate(70deg);
+    width: 50px;
+}
+
+aside img {
+    display: block;
+    width: 64px;
+}
+
+.portfolio img {
+    display: block;
+    width: 95%;
+    margin: 10px;
+}
+
+#image1 {
+    order: 1;
+}
+
+#image2 {
+    order: 2;
+}
+
+#image3 {
+    order: 6;
+}
+
+#image4 {
+    order: 3;
+}
+
+#image5 {
+    order: 4;
+}
+
+#image6 {
+    order: 5;
+}
+
+#video {
+    order: -1;
+}
+/*Because this is a twitter screenshot, and it has the user's name in the image, I'm not sure if I need to attribute further?*/
+#laugh {
+    display: block;
+    margin: 10px auto 10px 10px;
+    width: 200px;
+    opacity: 0.8;
+}
+/*this style rule was set for forsale.html*/
+figure > a > img {
+    display: block;
+    margin: 5% auto;
+    width: 90%;
+   height: 300px;
+}
+
+/* Video Styles*/
+
+#video {
+    flex: 1 1 auto;
+}
+ 
+ video {
+     display: block;
+     width: 95%;
+     border: 25px rgb(192, 192, 192) outset;
+     padding: 0px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+/* Animation Styles  */
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#laugh:hover {
+    animation: spin 3s linear infinite;
+}
+
+/* Div Styles */
+
+.column1-3 {
+    -webkit-flex: 1 1 0px;
+    flex: 1 1 0px;
+    height: 200px;
+    border: 3px solid rgb(10, 87, 87);
+    border-radius: 3% 20%;
+    text-align: center;
+    position: relative; 
+    background: radial-gradient(circle at center, rgba(255,255,255,0.5), orange);
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    min-height: 100%;
+}
+
+.row1 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    min-height: 100%;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.row2 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    min-height: 100%;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+.product {
+    -webkit-flex:1 1 0px;
+    flex: 1 1 0px;
+}
+
+.portfolio {
+    flex: 1 1 auto;
+    align-content: center;
+}
+
+cite {
+    text-align: end;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+#checkout {
+    text-align: center;
+    align-self: center;
+    justify-self: flex-end;
+    width: 200px;
+    margin-top: 2em;
+}
+
+
+#gallery {
+    height: 400px;
+    overflow-x: auto;
+}
+
+#gallery > img {
+    display: block;
+    max-width: 300px;
+    height: 250px;
+    float: left;
+}
+/*checkout button has no function until I learn what to do with it!*/
+#checkout {
+    background: rgba(160, 81, 45, 0.705);
+    border: 5px outset sienna;
+    color: rgb(149, 201, 60);
+    padding: 3px;
+}
+
+#about {
+    background-image: url(Images/welding3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: rgb(142, 142, 142);
+    text-align: center;
+    max-height: fit-content;
+    -webkit-flex: 1 1 0px;
+    flex: 1 1 0px;
+}
+
+/* Table Styles */
+
+table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255,255,255,0.5);
+    border: 5px solid rgba(150,150,150,0.2);
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 2px dotted rgba(150,150,150,0.5);
+}
+
+/* Mobile Styles 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    
+    #logo , aside , .navbar , #sitemap , map {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 32px;
+    }
+
+    #mobileLogo {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .Inavbar {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .navlink, .cart {
+        display: block;
+        position: absolute;
+    }
+
+    .cart {
+        left: 5px;
+    }
+
+    .navlink {
+        right: 5px;
+    }
+
+    .navlink img , .cart img {
+        width: 32px;
+    }
+
+    .navdiv {
+        flex-flow: column nowrap;
+        position: relative;
+    }
+
+    .cart:hover + aside, .aside:hover { /* I want the cart information that's contained in the aside element to display upon hover, but can't get it to work using just CSS. I've seen tutorials that use a bit of JS to manage navigation dropdown menus, is that my only option? */
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .navlink:hover + .navbar, .navbar:hover { /* Finally got this part working, but the only way I found to do so is if .navlink and .navbar are in the same container, with .navbar immediately following .navlink. I was going to use a separate container for the nav icons so I could set them to either side using a flex rule like space-between, but then the hover ceased to function. */
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    div.navbar {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row1, .row2 {
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    
+
+}

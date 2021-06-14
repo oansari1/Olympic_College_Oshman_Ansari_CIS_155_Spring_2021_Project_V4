@@ -1,0 +1,61 @@
+<!doctype HTML>
+
+<HTML lang="en">
+
+    <Head>
+        <!--
+            Author: Oshman Ansari
+            Date: 5/27/21
+            CSS155 Project V3
+
+            This is the index page of my site, where visitors can navigate to
+            the various other pages of my site. It's just a sitemap linking to the
+            other pages of my site.
+
+            I made some adjustments for the index page to function on mobile sites.
+
+            The learning outcomes featured on this site are:
+            
+        -->
+    <title>Ozzie's Project</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="metal fabrication, pot rack, fire pit" />
+        <link href="reset.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+    </Head>
+
+    <body style="background-color:rgb(142, 142, 142)">
+        <header>
+            <div>
+                <img src="Images/logo.png" alt="logo" id="logo" />
+                <img src="Images/mobileLogo.png" alt="logo" id="mobileLogo" />
+            </div>
+
+            <nav>
+                    <div class="Inavbar">
+                        <div class="column1-6"><a href="index.html">Home</a></div>
+                        <div class="column1-6"><a href="about.html">About</a></div>
+                        <div class="column1-6"><a href="contact.html">Contact</a></div>
+                        <div class="column1-6"><a href="forsale.html">For Sale</a></div>
+                        <div class="column1-6"><a href="portfolio.html">Portfolio</a></div>
+                        <div class="column1-6"><a href="reviews.html">Reviews</a></div>
+                    </div>
+            </nav>
+        </header>  
+            <figure id="sitemap"><img src="Images/welding1-1.png" alt="sitemap" usemap="#sitemap"/>
+            <map name="sitemap">
+                <area shape="rect" coords="425,190,530,280" href="about.html" alt="About" />
+                <area shape="rect" coords="415,34,545,160" href="contact.html" alt="Contact" />
+                <area shape="rect" coords="685,340,755,355" href="forsale.html" alt="Products" />
+                <area shape="rect" coords="155,530,325,580" href="portfolio.html" alt="Projects" />
+                <area shape="rect" coords="130,240,265,280" href="reviews.html" alt="Reviews"/>
+            </map>
+        </figure>
+            <footer>
+                &#169; 2021 Ozzie Ansari <address>One Infinite Loop, Cupertino California 95014 - It's a Coding Joke, Get It? &#222; </address>
+            </footer>
+    </body>
+
+   
+</HTML>

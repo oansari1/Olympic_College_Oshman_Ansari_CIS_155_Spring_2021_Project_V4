@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Ozzie's Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="metal fabrication, pot rack, fire pit" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="reset.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+        <!--
+            Author: Oshman Ansari
+            Date: 5/27/21
+            CSS155 Project V3
+
+            This is a portfolio of some of my previous work. Eventually I want the images to link with
+            any applicable customer reviews.
+
+            Learning Outcomes:
+
+            M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page (HTML)
+
+                Video was added with controls and loop enabled.
+        -->
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img src="Images/logo.png" alt="logo" id="logo" />
+                <img src="Images/mobileLogo.png" alt="logo" id="mobileLogo" />
+            </div>
+
+            <nav>
+                <div class="navdiv">
+                    <a class="cart" href="#">
+                        <img src="Images/cart.png" alt="cart" />
+                    </a>
+                    <a class="navlink" href="#">
+                        <img src="Images/nav.png" alt="" />
+                    </a>
+                    <div class="navbar">
+                        <div class="column1-6" ><a href="index.html">Home</a></div>
+                        <div class="column1-6" ><a href="about.html">About</a></div>
+                        <div class="column1-6" ><a href="contact.html">Contact</a></div>
+                        <div class="column1-6" ><a href="forsale.html">For Sale</a></div>
+                        <div class="column1-6" ><a href="portfolio.html">Portfolio</a></div>
+                        <div class="column1-6" ><a href="reviews.html">Reviews</a></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row" id="flexContainer">
+            <main>
+                <h1>
+                    PORTFOLIO
+                </h1>
+                <h2>
+                    A Glimpse of Past Projects
+                </h2>
+                <div class="row2">
+                    <figure class="portfolio" id="image1">
+                        <img src="Images/portfolio1.jpg" alt="project1" id="image1" />
+                    </figure>
+                    <figure class="portfolio" id="image2">
+                        <img src="Images/portfolio2.jpg" alt="project2" />
+                    </figure>
+                    <figure class="portfolio" id="image3">
+                        <img src="Images/portfolio3.jpg" alt="project3" />
+                    </figure>
+                    <figure class="portfolio" id="image4">
+                        <img src="Images/portfolio4.jpg" alt="project4" />
+                    </figure>
+                    <figure class="portfolio" id="image5">
+                        <img src="Images/portfolio5.jpg" alt="project5" />
+                    </figure>
+                    <figure class="portfolio" id="image6">
+                        <img src="Images/portfolio6.jpg" alt="project6" />
+                    </figure>
+                    <figure class="portfolio" id="video">
+                        <video controls loop src="Images/Placeholder.mp4">
+                        </video>
+                    </figure>
+                    <iframe width="320" height="190" src="https://www.youtube.com/embed/tJiHTDCQIZw" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </main>
+            <aside>
+                <img src="Images/cart.png" alt="view cart" />
+                <!--
+                Cart Contents, if any. If none, display "cart is empty"
+            -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni dolor consequuntur autem alias facere facilis delectus. Perferendis distinctio tempore molestias. Velit recusandae, tempora nulla error a voluptatem
+                voluptatum, repellat ipsa nihil quos facere ullam eveniet pariatur? Ut libero rerum sed mollitia hic dignissimos expedita, quisquam incidunt, numquam quaerat perspiciatis.
+                <div id="checkout">CHECKOUT</div>
+            </aside>
+        </div>
+        <footer>
+            &#169; 2021 Ozzie Ansari One Infinite Loop, Cupertino California 95014 - It's a Coding Joke, Get It? :&#222;
+        </footer>
+    </body>
+</html>

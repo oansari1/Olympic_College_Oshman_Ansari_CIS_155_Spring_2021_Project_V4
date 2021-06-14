@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Ozzie's Project</title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="metal fabrication, pot rack, fire pit" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="reset.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+        <!--
+            Author: Oshman Ansari
+            Date: 5/27/21
+            CSS155 Project V3
+
+            This is my contact page. It doesn't have very much content, but it's too much
+            to put into the footer, so it justifies having it's own page.
+
+            M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
+            
+            Hours of operation table contains 4 columns and 8 rows. Table elements "thead","tbody","tfoot","th" and "td" are used.
+
+            M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+
+            "thead" and "tfoot" span 4 columns, the table cells for the  "Sat" and "Sun" rows span 3 columns.
+        -->
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img src="Images/logo.png" alt="logo" id="logo" />
+                <img src="Images/mobileLogo.png" alt="logo" id="mobileLogo" />
+            </div>
+
+            <nav>
+                <div class="navdiv">
+                    <a class="cart" href="#">
+                        <img src="Images/cart.png" alt="cart" />
+                    </a>
+                    <a class="navlink" href="#">
+                        <img src="Images/nav.png" alt="" />
+                    </a>
+                    <div class="navbar">
+                        <div class="column1-6" ><a href="index.html">Home</a></div>
+                        <div class="column1-6" ><a href="about.html">About</a></div>
+                        <div class="column1-6" ><a href="contact.html">Contact</a></div>
+                        <div class="column1-6" ><a href="forsale.html">For Sale</a></div>
+                        <div class="column1-6" ><a href="portfolio.html">Portfolio</a></div>
+                        <div class="column1-6" ><a href="reviews.html">Reviews</a></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row" id="flexContainer">
+            <main>
+                <h1>Contact Ozzie</h1>
+                <h2>WHO DARES DISTURB THE GREAT AND POWERFUL OZ?!</h2>
+                <div class="content">
+                    <p>So, you wish to inquire about something? Perhaps a custom order? Or you simply wish to commune with Oz, the great and powerful? Well here's your chance!</p>
+                    <p>If you're interested in pricing a custom job, I recommend emailing me <a href="mailto:oansari2012@yahoo.com">HERE</a> for fastest service.</p>
+                    <p>
+                        Please note that any design work I have to perform prior to fabrication will incur an engineering fee at a rate of $65/hr. I can work with anything from formal blueprints to a sketch on a napkin (as long as it has
+                        the necessary measurements and properties included), but if I have to spend time figuring out dimensions, material choice, and how components come together, it's going to cost you extra!
+                    </p>
+                    <p>To check on an order or for other quick questions, feel free to call me anytime!</p>
+                    <br />
+                    <ul>
+                        <li>Email:<a href="mailto:ozzie@ozzie.com">ozzie@ozzie.com</a></li>
+                        <li>Phone:<a href="tel:+18888675309">(888) 867-5309</a></li>
+                        <li>Mail: Apple Headquarters, One Infinite Loop Cupertino California 95014</li>
+                    </ul>
+                    <table>
+                        <thead>
+                            <th colspan="4">Hours of Operation</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Day</th>
+                                <th>Open</th>
+                                <th>Lunch</th>
+                                <th>Close</th>
+                            </tr>
+                            <tr>
+                                <th>Mon</th>
+                                <td>8:00AM</td>
+                                <td>12:00PM</td>
+                                <td>5:00PM</td>
+                            </tr>
+                            <tr>
+                                <th>Tue</th>
+                                <td>8:00AM</td>
+                                <td>12:30PM</td>
+                                <td>5:00PM</td>
+                            </tr>
+                            <tr>
+                                <th>Wed</th>
+                                <td>8:00AM</td>
+                                <td>12:00PM</td>
+                                <td>5:00PM</td>
+                            </tr>
+                            <tr>
+                                <th>Thu</th>
+                                <td>8:00AM</td>
+                                <td>12:30PM</td>
+                                <td>5:00PM</td>
+                            </tr>
+                            <tr>
+                                <th>Fri</th>
+                                <td>8:00AM</td>
+                                <td>12:00PM</td>
+                                <td>5:00PM</td>
+                            </tr>
+                            <tr>
+                                <th>Sat</th>
+                                <td colspan="3">Closed</td>
+                            </tr>
+                            <tr>
+                                <th>Sun</th>
+                                <td colspan="3">Closed</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td colspan="4">All times Pacific Standard</td>
+                        </tfoot>
+                    </table>
+                </div>
+            </main>
+            <aside>
+                <img src="Images/cart.png" alt="view cart" />
+                <!--
+                        Cart Contents, if any. If none, display "cart is empty"
+                    -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores, atque provident nostrum inventore officia eos perferendis iure voluptatibus veritatis est magni quod cumque, amet iusto. Deserunt pariatur
+                dignissimos suscipit officiis voluptatibus nulla, maxime aspernatur culpa praesentium enim eum explicabo, nobis, odio quibusdam laboriosam error inventore quidem alias provident debitis?
+                <div id="checkout">
+                    <!--I'm making this into a checkout button, but I know there
+                        are other methods to do it that we haven't been shown yet. This
+                        will let me use borders, shadows, and other effects to make it
+                        look close to how I eventually want-->
+                    CHECKOUT
+                </div>
+            </aside>
+        </div>
+        <footer>
+            &#169; 2021 Ozzie Ansari One Infinite Loop, Cupertino California 95014 - It's a Coding Joke, Get It? :&#222;
+        </footer>
+    </body>
+</html>
