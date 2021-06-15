@@ -82,7 +82,11 @@
                         <video controls loop src="Images/Placeholder.mp4">
                         </video>
                     </figure>
-                    <iframe width="320" height="190" src="https://www.youtube.com/embed/tJiHTDCQIZw" frameborder="0" allowfullscreen></iframe>
+                   <figure class="portfolio" id="iframe">
+                        <iframe src="https://www.youtube.com/embed/tJiHTDCQIZw" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </figure>
+                    <!--Setting width and height on the iframe element messes with flex and responsive design: after the page is sized below the number set for the width, the iframe element responds appropriately, but the header element shrinks at a faster rate, and the aside element starts disappearing, without horizontal overflow. I attempted to set a responsive iframe size with CSS, with no luck-->
                 </div>
             </main>
             <aside>
